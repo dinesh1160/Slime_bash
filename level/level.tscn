@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://kgxh0gknfkh6"]
+
+[ext_resource type="Script" path="res://level/level.gd" id="1_7jeot"]
+[ext_resource type="Texture2D" uid="uid://dpai2fy1l0git" path="res://assets/scene/background.png" id="1_faqa8"]
+[ext_resource type="PackedScene" uid="uid://co4d0xrr045s1" path="res://gameui/gameui.tscn" id="2_sg73n"]
+
+[node name="level" type="Node2D"]
+script = ExtResource("1_7jeot")
+
+[node name="gameui" parent="." instance=ExtResource("2_sg73n")]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(511, 302)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_faqa8")
+
+[node name="DebugLabel" type="Label" parent="."]
+visible = false
+offset_left = 37.0
+offset_top = 20.0
+offset_right = 437.0
+offset_bottom = 180.0
+text = "wfhjgksjgkasl
+fjgbhdgffg
+gfdgdfgdg
+fdgfdg
+dfgfd
+gdgdfgdfgfddff"
+
+[node name="slimeposition" type="Marker2D" parent="."]
+position = Vector2(150, 330)

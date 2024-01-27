@@ -1,0 +1,14 @@
+Sprite2D
+Label
+VBoxContainer
+MarginContainer
+CanvasLayer
+TextureButton
+HBoxContainer
+TextureRect
+AudioStreamPlayer2D
+AnimationPlayer
+Marker2D
+VisibleOnScreenNotifier2D
+CollisionShape2D
+RigidBody2D

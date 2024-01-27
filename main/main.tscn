@@ -1,0 +1,78 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj84ggi143mpm"]
+
+[ext_resource type="Texture2D" uid="uid://c2f83oygkt5ce" path="res://assets/scene/869.jpg" id="1_42gpa"]
+[ext_resource type="LabelSettings" uid="uid://xlby5jafwj20" path="res://assets/fonts/main.tres" id="2_ocwur"]
+[ext_resource type="PackedScene" uid="uid://yupa5xejatq" path="res://level_button/level_buttton.tscn" id="3_411c4"]
+[ext_resource type="Texture2D" uid="uid://dfd48betcbpk7" path="res://icon.svg" id="4_6jfnt"]
+
+[node name="main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -25.0
+offset_top = 2.0
+offset_right = 17.6666
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_42gpa")
+expand_mode = 3
+
+[node name="MC" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+
+[node name="Label" type="Label" parent="MC"]
+layout_mode = 2
+text = "                       SLIME BASH"
+label_settings = ExtResource("2_ocwur")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="level_buttton" parent="HBoxContainer" instance=ExtResource("3_411c4")]
+layout_mode = 2
+
+[node name="level_buttton2" parent="HBoxContainer" instance=ExtResource("3_411c4")]
+layout_mode = 2
+level_number = 2
+
+[node name="level_buttton3" parent="HBoxContainer" instance=ExtResource("3_411c4")]
+layout_mode = 2
+level_number = 3
+
+[node name="level_buttton4" parent="HBoxContainer" instance=ExtResource("3_411c4")]
+layout_mode = 2
+level_number = 4
+
+[node name="image" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(130, 156)
+scale = Vector2(4.46679, 4.60742)
+texture = ExtResource("4_6jfnt")
